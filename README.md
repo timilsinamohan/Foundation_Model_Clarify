@@ -1,6 +1,6 @@
 # Project Overview
 
-This is lung cancer relapse project for early stage lung cancer patient. This repository contains eight Jupyter notebooks, each demonstrating different foundation models sourced from the Hugging Face library. Please note that due to GDPR compliance, we are unable to provide the datasets used within these notebooks.
+This is lung cancer relapse project for early stage lung cancer patient. This repository contains eight Jupyter notebooks, each demonstrating different foundation models sourced from the Hugging Face library. Please note that due to GDPR compliance, we are unable to provide the datasets used within these notebooks. However, we have provided the synthetic dataset using Synthetic Data Vault Python Library (https://docs.sdv.dev/sdv). The Mahalanobis Distance between Real and Synthetic Data: 0.6626. The Mahalanobis distance is a measure of the distance between two distributions (in this case, the real and synthetic datasets) that takes into account correlations between the variables. The smaller the value, the closer the synthetic data is to the real data's distribution.
 
 ## Dependencies
 
@@ -17,6 +17,7 @@ sentry-sdk==1.41.0
 torch==2.2.1
 tqdm==4.66.2
 transformers==4.38.2
+sdv ==1.2.0
 
 
 ## Running the Notebooks
